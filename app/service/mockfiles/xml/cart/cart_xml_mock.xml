@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sps.resource.pojo.order.Order>
+	<productTotal>1.17</productTotal>
+	<productTax>0.26</productTax>
+	<productDiscount>0.00</productDiscount>
+	<shippingTotal>2.47</shippingTotal>
+	<shippingTax>0.00</shippingTax>
+	<shippingDiscount>0.00</shippingDiscount>
+	<totalRefund>0.00</totalRefund>
+	<createDate>2012-12-21 15:18:03.961 PST</createDate>
+	<updateDate>2012-12-31 03:33:46.103 PST</updateDate>
+	<shipBins>
+		<sps.resource.pojo.order.ShipBin>
+			<productTotal>0.27</productTotal>
+			<productTax>0.09</productTax>
+			<productDiscount>0.00</productDiscount>
+			<shippingTotal>0.99</shippingTotal>
+			<shippingTax>0.00</shippingTax>
+			<shippingDiscount>0.00</shippingDiscount>
+			<totalRefund>0.00</totalRefund>
+			<lineItems>
+				<sps.resource.pojo.order.LineItem>
+					<productTotal>0.09</productTotal>
+					<productTax>0.03</productTax>
+					<productDiscount>0.00</productDiscount>
+					<shippingTotal>0.33</shippingTotal>
+					<shippingTax>0.00</shippingTax>
+					<shippingDiscount>0.00</shippingDiscount>
+					<totalRefund>0.00</totalRefund>
+					<lineItemId>223009050</lineItemId>
+					<skuOid>CommerceProduct_7182</skuOid>
+					<projectOid>1234</projectOid>
+					<quantity>1</quantity>
+					<vendor>district_west</vendor>
+					<priceLevel>0</priceLevel>
+					<lineItemOptions />
+					<refunds />
+				</sps.resource.pojo.order.LineItem>
+				<sps.resource.pojo.order.LineItem>
+					<productTotal>0.09</productTotal>
+					<productTax>0.03</productTax>
+					<productDiscount>0.00</productDiscount>
+					<shippingTotal>0.33</shippingTotal>
+					<shippingTax>0.00</shippingTax>
+					<shippingDiscount>0.00</shippingDiscount>
+					<totalRefund>0.00</totalRefund>
+					<lineItemId>221007050</lineItemId>
+					<skuOid>CommerceProduct_7182</skuOid>
+					<projectOid>1234</projectOid>
+					<quantity>1</quantity>
+					<vendor>district_west</vendor>
+					<priceLevel>0</priceLevel>
+					<lineItemOptions />
+					<refunds />
+				</sps.resource.pojo.order.LineItem>
+				<sps.resource.pojo.order.LineItem>
+					<productTotal>0.09</productTotal>
+					<productTax>0.03</productTax>
+					<productDiscount>0.00</productDiscount>
+					<shippingTotal>0.33</shippingTotal>
+					<shippingTax>0.00</shippingTax>
+					<shippingDiscount>0.00</shippingDiscount>
+					<totalRefund>0.00</totalRefund>
+					<lineItemId>223011050</lineItemId>
+					<skuOid>CommerceProduct_7182</skuOid>
+					<projectOid>1234</projectOid>
+					<quantity>1</quantity>
+					<vendor>district_west</vendor>
+					<priceLevel>0</priceLevel>
+					<lineItemOptions />
+					<refunds />
+				</sps.resource.pojo.order.LineItem>
+			</lineItems>
+			<shipBinId>211007050</shipBinId>
+			<deliveryOption>ufc</deliveryOption>
+			<deliveryMethod>mail_order</deliveryMethod>
+			<shippingAddressOid>1000000,CO,80525,FC</shippingAddressOid>
+		</sps.resource.pojo.order.ShipBin>
+		<sps.resource.pojo.order.ShipBin>
+			<productTotal>1.17</productTotal>
+			<productTax>0.26</productTax>
+			<productDiscount>0.00</productDiscount>
+			<shippingTotal>2.47</shippingTotal>
+			<shippingTax>0.00</shippingTax>
+			<shippingDiscount>0.00</shippingDiscount>
+			<totalRefund>0.00</totalRefund>
+			<lineItems>
+				<sps.resource.pojo.order.LineItem>
+					<productTotal>0.90</productTotal>
+					<productTax>0.17</productTax>
+					<productDiscount>0.00</productDiscount>
+					<shippingTotal>1.48</shippingTotal>
+					<shippingTax>0.00</shippingTax>
+					<shippingDiscount>0.00</shippingDiscount>
+					<totalRefund>0.00</totalRefund>
+					<lineItemId>222016050</lineItemId>
+					<skuOid>CommerceProduct_7182</skuOid>
+					<projectOid>1234</projectOid>
+					<quantity>10</quantity>
+					<vendor>district_west</vendor>
+					<priceLevel>0</priceLevel>
+					<lineItemOptions />
+					<refunds />
+				</sps.resource.pojo.order.LineItem>
+			</lineItems>
+			<shipBinId>210012050</shipBinId>
+			<deliveryOption>ufc</deliveryOption>
+			<deliveryMethod>mail_order</deliveryMethod>
+			<shippingAddressOid>1000000,CO,80525,FC</shippingAddressOid>
+		</sps.resource.pojo.order.ShipBin>
+	</shipBins>
+	<partnerOid>1</partnerOid>
+	<accountOid>5000050</accountOid>
+	<label>mobile</label>
+	<creditCardOid />
+	<status>BRW</status>
+	<lockState />
+	<oid>209013050</oid>
+	<shardKey>1072002177</shardKey>
+	<recordSeq>18</recordSeq>
+</sps.resource.pojo.order.Order>

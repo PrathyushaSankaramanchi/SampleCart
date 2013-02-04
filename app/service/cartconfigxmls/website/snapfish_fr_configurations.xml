@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+  <shippingparameters>
+    <shippingoption name="mailorder">
+      <shippingaddress>
+        <localaddress parametertype="simple" enabled="yes"/>
+        <internationaladdress parametertype="simple" enabled="no"/>
+      </shippingaddress>
+       <localaddressfields>
+        <field name="title" displayed="no"/>
+        <field name="firstname" displayorder="4" displayed="yes" ismandatory="yes" />
+        <field name="lastname"  displayorder="5" displayed="yes" ismandatory="yes" />
+        <field name="streetmailing" displayorder="6" displayed="yes" ismandatory="no"/>
+        <field name="streetmailing2" displayorder="7" displayed="yes" ismandatory="yes"/>
+        <field name="streetmailing3" displayed="no"/>
+        <field name="citymailing" displayorder="8" displayed="yes" ismandatory="yes"/>
+        <field name="statemailing" displayed="no"/>
+        <field name="zipmailing" displayorder="9" displayed="yes" ismandatory="yes"/>
+        <field name="mailingcountrycode" displayorder="10" displayed="yes" ismandatory="yes"/>
+        <field name="emailaddress" displayed="no" />
+        <field name="phonenumber1"  displayed="no" />
+        <field name="phonenumber2"  displayed="no" />
+      </localaddressfields>
+      <internationaladdressfields>
+        <field name="title" displayed="no"/>
+        <field name="firstname" displayed="no" />
+        <field name="lastname"  displayed="no" />
+        <field name="streetmailing" displayorder="4" displayed="yes" ismandatory="yes"/>
+        <field name="streetmailing2" displayorder="5" displayed="yes" ismandatory="no"/>
+        <field name="streetmailing3" displayorder="6" displayed="yes" ismandatory="no"/>
+        <field name="citymailing" displayorder="7" displayed="yes" ismandatory="no"/>
+        <field name="statemailing" displayorder="8" displayed="yes" ismandatory="yes"/>
+        <field name="zipmailing" displayorder="9" displayed="yes" ismandatory="no"/>
+        <field name="mailingcountrycode" displayorder="10" displayed="yes" ismandatory="yes"/>
+        <field name="emailaddress" displayed="no" />
+        <field name="phonenumber1"  displayed="no" />
+        <field name="phonenumber2"  displayed="no" />
+      </internationaladdressfields>
+    </shippingoption>
+  </shippingparameters>
+</parameters>

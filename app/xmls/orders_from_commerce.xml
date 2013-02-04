@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sps.common.restlet.CollectionPartQueryResult>
+	<resources>
+		<sps.common.restlet.RestletRef>
+			<resource class="sps.resource.pojo.order.Order">
+				<productTotal>13.26</productTotal>
+				<productTax>1.11</productTax>
+				<productDiscount>0.00</productDiscount>
+				<shippingTotal>2.98</shippingTotal>
+				<shippingTax>0.00</shippingTax>
+				<shippingDiscount>0.00</shippingDiscount>
+				<totalRefund>0.00</totalRefund>
+				<createDate>2012-11-14 15:02:20.631 PST</createDate>
+				<updateDate>2012-11-14 15:02:20.631 PST</updateDate>
+				<shipBins>
+					<sps.resource.pojo.order.ShipBin>
+						<productTotal>13.16</productTotal>
+						<productTax>1.11</productTax>
+						<productDiscount>0.00</productDiscount>
+						<shippingTotal>2.98</shippingTotal>
+						<shippingTax>0.00</shippingTax>
+						<shippingDiscount>0.00</shippingDiscount>
+						<totalRefund>0.00</totalRefund>
+						<lineItems>
+							<sps.resource.pojo.order.LineItem>
+								<productTotal>0.27</productTotal>
+								<productTax>0.09</productTax>
+								<productDiscount>0.00</productDiscount>
+								<shippingTotal>0.99</shippingTotal>
+								<shippingTax>0.00</shippingTax>
+								<shippingDiscount>0.00</shippingDiscount>
+								<totalRefund>0.00</totalRefund>
+								<lineItemId>41013050</lineItemId>
+								<skuOid>CommerceProduct_7182</skuOid>
+								<projectOid>proj1</projectOid>
+								<quantity>3</quantity>
+								<vendorOid>district_us</vendorOid>
+								<priceLevel>0</priceLevel>
+								<lineItemOptions />
+								<refunds />
+							</sps.resource.pojo.order.LineItem>
+							<sps.resource.pojo.order.LineItem>
+								<productTotal>12.99</productTotal>
+								<productTax>1.02</productTax>
+								<productDiscount>0.00</productDiscount>
+								<shippingTotal>1.99</shippingTotal>
+								<shippingTax>0.00</shippingTax>
+								<shippingDiscount>0.00</shippingDiscount>
+								<totalRefund>0.00</totalRefund>
+								<lineItemId>41014050</lineItemId>
+								<skuOid>CommerceProduct_7558</skuOid>
+								<projectOid>proj2</projectOid>
+								<quantity>1</quantity>
+								<vendorOid>district_us</vendorOid>
+								<priceLevel>0</priceLevel>
+								<lineItemOptions />
+								<refunds />
+							</sps.resource.pojo.order.LineItem>
+						</lineItems>
+						<shipBinId>39010050</shipBinId>
+						<deliveryOption>ufc</deliveryOption>
+						<deliveryMethod>mail_order</deliveryMethod>
+						<shippingAddressOid>1000000,CO,80525,FC</shippingAddressOid>
+					</sps.resource.pojo.order.ShipBin>
+				</shipBins>
+				<partnerOid>1</partnerOid>
+				<accountOid>10000050</accountOid>
+				<label>order3</label>
+				<creditCardOid>30000050</creditCardOid>
+				<status>CFM</status>
+				<lockState />
+				<oid>40017050</oid>
+				<shardKey>692114604</shardKey>
+				<recordSeq>2</recordSeq>
+			</resource>
+			<uri>
+				http://ecommerce1.qa.snapfish.com/v1/order/40017050
+			</uri>
+		</sps.common.restlet.RestletRef>
+		<sps.common.restlet.RestletRef>
+			<resource class="sps.resource.pojo.order.Order">
+				<productTotal>0.00</productTotal>
+				<productTax>0.00</productTax>
+				<productDiscount>0.00</productDiscount>
+				<shippingTotal>0.00</shippingTotal>
+				<shippingTax>0.00</shippingTax>
+				<shippingDiscount>0.00</shippingDiscount>
+				<totalRefund>0.00</totalRefund>
+				<createDate>2012-11-14 15:02:10.230 PST</createDate>
+				<updateDate>2012-11-14 15:02:10.230 PST</updateDate>
+				<shipBins />
+				<partnerOid>1</partnerOid>
+				<accountOid>10000050</accountOid>
+				<label>different_cart</label>
+				<creditCardOid />
+				<status>BRW</status>
+				<lockState />
+				<oid>40009050</oid>
+				<shardKey>692114604</shardKey>
+				<recordSeq>1</recordSeq>
+			</resource>
+			<uri>
+				http://ecommerce1.qa.snapfish.com/v1/order/40009050
+			</uri>
+		</sps.common.restlet.RestletRef>
+		<!-- <sps.common.restlet.RestletRef>
+			<resource class="sps.resource.pojo.order.Order">
+				<productTotal>0.00</productTotal>
+				<productTax>0.00</productTax>
+				<productDiscount>0.00</productDiscount>
+				<shippingTotal>0.00</shippingTotal>
+				<shippingTax>0.00</shippingTax>
+				<shippingDiscount>0.00</shippingDiscount>
+				<totalRefund>0.00</totalRefund>
+				<createDate>2012-11-14 15:02:07.667 PST</createDate>
+				<updateDate>2012-11-14 15:02:07.667 PST</updateDate>
+				<shipBins />
+				<partnerOid>1</partnerOid>
+				<accountOid>10000050</accountOid>
+				<label>noncart</label>
+				<creditCardOid />
+				<status>BRW</status>
+				<lockState />
+				<oid>40002050</oid>
+				<shardKey>692114604</shardKey>
+				<recordSeq>1</recordSeq>
+			</resource>
+			<uri>
+				http://ecommerce1.qa.snapfish.com/v1/order/40002050
+			</uri>
+		</sps.common.restlet.RestletRef>
+		<sps.common.restlet.RestletRef>
+			<resource class="sps.resource.pojo.order.Order">
+				<productTotal>0.00</productTotal>
+				<productTax>0.00</productTax>
+				<productDiscount>0.00</productDiscount>
+				<shippingTotal>0.00</shippingTotal>
+				<shippingTax>0.00</shippingTax>
+				<shippingDiscount>0.00</shippingDiscount>
+				<totalRefund>0.00</totalRefund>
+				<createDate>2012-11-14 15:02:20.483 PST</createDate>
+				<updateDate>2012-11-14 15:02:20.483 PST</updateDate>
+				<shipBins />
+				<partnerOid>1</partnerOid>
+				<accountOid>10000050</accountOid>
+				<label>order1</label>
+				<creditCardOid />
+				<status>DEL</status>
+				<lockState />
+				<oid>40015050</oid>
+				<shardKey>692114604</shardKey>
+				<recordSeq>1</recordSeq>
+			</resource>
+			<uri>
+				http://ecommerce1.qa.snapfish.com/v1/order/40015050
+			</uri>
+		</sps.common.restlet.RestletRef>
+		<sps.common.restlet.RestletRef>
+			<resource class="sps.resource.pojo.order.Order">
+				<productTotal>0.00</productTotal>
+				<productTax>0.00</productTax>
+				<productDiscount>0.00</productDiscount>
+				<shippingTotal>0.00</shippingTotal>
+				<shippingTax>0.00</shippingTax>
+				<shippingDiscount>0.00</shippingDiscount>
+				<totalRefund>0.00</totalRefund>
+				<createDate>2012-11-14 13:23:06.598 PST</createDate>
+				<updateDate>2012-11-14 13:23:06.598 PST</updateDate>
+				<shipBins />
+				<partnerOid>1</partnerOid>
+				<accountOid>10000050</accountOid>
+				<label>order1</label>
+				<creditCardOid />
+				<status>DEL</status>
+				<lockState />
+				<oid>38240050</oid>
+				<shardKey>692114604</shardKey>
+				<recordSeq>1</recordSeq>
+			</resource>
+			<uri>
+				http://ecommerce1.qa.snapfish.com/v1/order/38240050
+			</uri>
+		</sps.common.restlet.RestletRef>
+		<sps.common.restlet.RestletRef>
+			<resource class="sps.resource.pojo.order.Order">
+				<productTotal>0.00</productTotal>
+				<productTax>0.00</productTax>
+				<productDiscount>0.00</productDiscount>
+				<shippingTotal>0.00</shippingTotal>
+				<shippingTax>0.00</shippingTax>
+				<shippingDiscount>0.00</shippingDiscount>
+				<totalRefund>0.00</totalRefund>
+				<createDate>2012-11-14 15:02:20.566 PST</createDate>
+				<updateDate>2012-11-14 15:02:20.566 PST</updateDate>
+				<shipBins />
+				<partnerOid>1</partnerOid>
+				<accountOid>10000050</accountOid>
+				<label>order2</label>
+				<creditCardOid />
+				<status>BRW</status>
+				<lockState />
+				<oid>40016050</oid>
+				<shardKey>692114604</shardKey>
+				<recordSeq>1</recordSeq>
+			</resource>
+			<uri>
+				http://ecommerce1.qa.snapfish.com/v1/order/40016050
+			</uri>
+		</sps.common.restlet.RestletRef>
+		<sps.common.restlet.RestletRef>
+			<resource class="sps.resource.pojo.order.Order">
+				<productTotal>13.26</productTotal>
+				<productTax>1.11</productTax>
+				<productDiscount>0.00</productDiscount>
+				<shippingTotal>2.98</shippingTotal>
+				<shippingTax>0.00</shippingTax>
+				<shippingDiscount>0.00</shippingDiscount>
+				<totalRefund>0.00</totalRefund>
+				<createDate>2012-11-14 15:02:20.631 PST</createDate>
+				<updateDate>2012-11-14 15:02:20.631 PST</updateDate>
+				<shipBins>
+					<sps.resource.pojo.order.ShipBin>
+						<productTotal>13.26</productTotal>
+						<productTax>1.11</productTax>
+						<productDiscount>0.00</productDiscount>
+						<shippingTotal>2.98</shippingTotal>
+						<shippingTax>0.00</shippingTax>
+						<shippingDiscount>0.00</shippingDiscount>
+						<totalRefund>0.00</totalRefund>
+						<lineItems>
+							<sps.resource.pojo.order.LineItem>
+								<productTotal>0.27</productTotal>
+								<productTax>0.09</productTax>
+								<productDiscount>0.00</productDiscount>
+								<shippingTotal>0.99</shippingTotal>
+								<shippingTax>0.00</shippingTax>
+								<shippingDiscount>0.00</shippingDiscount>
+								<totalRefund>0.00</totalRefund>
+								<lineItemId>41013050</lineItemId>
+								<skuOid>CommerceProduct_7182</skuOid>
+								<projectOid>proj1</projectOid>
+								<quantity>3</quantity>
+								<vendorOid>district_us</vendorOid>
+								<priceLevel>0</priceLevel>
+								<lineItemOptions />
+								<refunds />
+							</sps.resource.pojo.order.LineItem>
+							<sps.resource.pojo.order.LineItem>
+								<productTotal>12.99</productTotal>
+								<productTax>1.02</productTax>
+								<productDiscount>0.00</productDiscount>
+								<shippingTotal>1.99</shippingTotal>
+								<shippingTax>0.00</shippingTax>
+								<shippingDiscount>0.00</shippingDiscount>
+								<totalRefund>0.00</totalRefund>
+								<lineItemId>41014050</lineItemId>
+								<skuOid>CommerceProduct_7558</skuOid>
+								<projectOid>proj2</projectOid>
+								<quantity>1</quantity>
+								<vendorOid>district_us</vendorOid>
+								<priceLevel>0</priceLevel>
+								<lineItemOptions />
+								<refunds />
+							</sps.resource.pojo.order.LineItem>
+						</lineItems>
+						<shipBinId>39010050</shipBinId>
+						<deliveryOption>ufc</deliveryOption>
+						<deliveryMethod>mail_order</deliveryMethod>
+						<shippingAddressOid>1000000,CO,80525,FC</shippingAddressOid>
+					</sps.resource.pojo.order.ShipBin>
+				</shipBins>
+				<partnerOid>1</partnerOid>
+				<accountOid>10000050</accountOid>
+				<label>order3</label>
+				<creditCardOid>30000050</creditCardOid>
+				<status>CFM</status>
+				<lockState />
+				<oid>40017050</oid>
+				<shardKey>692114604</shardKey>
+				<recordSeq>2</recordSeq>
+			</resource>
+			<uri>
+				http://ecommerce1.qa.snapfish.com/v1/order/40017050
+			</uri>
+		</sps.common.restlet.RestletRef>
+		<sps.common.restlet.RestletRef>
+			<resource class="sps.resource.pojo.order.Order">
+				<productTotal>13.26</productTotal>
+				<productTax>1.11</productTax>
+				<productDiscount>0.00</productDiscount>
+				<shippingTotal>2.98</shippingTotal>
+				<shippingTax>0.00</shippingTax>
+				<shippingDiscount>0.00</shippingDiscount>
+				<totalRefund>0.00</totalRefund>
+				<createDate>2012-11-14 13:23:06.723 PST</createDate>
+				<updateDate>2012-11-14 13:23:06.723 PST</updateDate>
+				<shipBins>
+					<sps.resource.pojo.order.ShipBin>
+						<productTotal>13.26</productTotal>
+						<productTax>1.11</productTax>
+						<productDiscount>0.00</productDiscount>
+						<shippingTotal>2.98</shippingTotal>
+						<shippingTax>0.00</shippingTax>
+						<shippingDiscount>0.00</shippingDiscount>
+						<totalRefund>0.00</totalRefund>
+						<lineItems>
+							<sps.resource.pojo.order.LineItem>
+								<productTotal>0.27</productTotal>
+								<productTax>0.09</productTax>
+								<productDiscount>0.00</productDiscount>
+								<shippingTotal>0.99</shippingTotal>
+								<shippingTax>0.00</shippingTax>
+								<shippingDiscount>0.00</shippingDiscount>
+								<totalRefund>0.00</totalRefund>
+								<lineItemId>38213050</lineItemId>
+								<skuOid>CommerceProduct_7182</skuOid>
+								<projectOid>proj1</projectOid>
+								<quantity>3</quantity>
+								<vendorOid>district_us</vendorOid>
+								<priceLevel>0</priceLevel>
+								<lineItemOptions />
+								<refunds />
+							</sps.resource.pojo.order.LineItem>
+							<sps.resource.pojo.order.LineItem>
+								<productTotal>12.99</productTotal>
+								<productTax>1.02</productTax>
+								<productDiscount>0.00</productDiscount>
+								<shippingTotal>1.99</shippingTotal>
+								<shippingTax>0.00</shippingTax>
+								<shippingDiscount>0.00</shippingDiscount>
+								<totalRefund>0.00</totalRefund>
+								<lineItemId>38214050</lineItemId>
+								<skuOid>CommerceProduct_7558</skuOid>
+								<projectOid>proj2</projectOid>
+								<quantity>1</quantity>
+								<vendorOid>district_us</vendorOid>
+								<priceLevel>0</priceLevel>
+								<lineItemOptions />
+								<refunds />
+							</sps.resource.pojo.order.LineItem>
+						</lineItems>
+						<shipBinId>36175050</shipBinId>
+						<deliveryOption>ufc</deliveryOption>
+						<deliveryMethod>mail_order</deliveryMethod>
+						<shippingAddressOid>1000000,CO,80525,FC</shippingAddressOid>
+					</sps.resource.pojo.order.ShipBin>
+				</shipBins>
+				<partnerOid>1</partnerOid>
+				<accountOid>10000050</accountOid>
+				<label>order3</label>
+				<creditCardOid>29115050</creditCardOid>
+				<status>CFM</status>
+				<lockState />
+				<oid>38242050</oid>
+				<shardKey>692114604</shardKey>
+				<recordSeq>2</recordSeq>
+			</resource>
+			<uri>
+				http://ecommerce1.qa.snapfish.com/v1/order/38242050
+			</uri>
+		</sps.common.restlet.RestletRef>
+		<sps.common.restlet.RestletRef>
+			<resource class="sps.resource.pojo.order.Order">
+				<productTotal>0.27</productTotal>
+				<productTax>0.09</productTax>
+				<productDiscount>0.00</productDiscount>
+				<shippingTotal>0.99</shippingTotal>
+				<shippingTax>0.00</shippingTax>
+				<shippingDiscount>0.00</shippingDiscount>
+				<totalRefund>0.00</totalRefund>
+				<createDate>2012-11-14 15:02:21.278 PST</createDate>
+				<updateDate>2012-11-14 15:02:21.278 PST</updateDate>
+				<shipBins>
+					<sps.resource.pojo.order.ShipBin>
+						<productTotal>0.27</productTotal>
+						<productTax>0.09</productTax>
+						<productDiscount>0.00</productDiscount>
+						<shippingTotal>0.99</shippingTotal>
+						<shippingTax>0.00</shippingTax>
+						<shippingDiscount>0.00</shippingDiscount>
+						<totalRefund>0.00</totalRefund>
+						<lineItems>
+							<sps.resource.pojo.order.LineItem>
+								<productTotal>0.27</productTotal>
+								<productTax>0.09</productTax>
+								<productDiscount>0.00</productDiscount>
+								<shippingTotal>0.99</shippingTotal>
+								<shippingTax>0.00</shippingTax>
+								<shippingDiscount>0.00</shippingDiscount>
+								<totalRefund>0.00</totalRefund>
+								<lineItemId>41015050</lineItemId>
+								<skuOid>CommerceProduct_7182</skuOid>
+								<projectOid>proj1</projectOid>
+								<quantity>3</quantity>
+								<vendorOid>district_us</vendorOid>
+								<priceLevel>0</priceLevel>
+								<lineItemOptions />
+								<refunds />
+							</sps.resource.pojo.order.LineItem>
+						</lineItems>
+						<shipBinId>39011050</shipBinId>
+						<deliveryOption>ufc</deliveryOption>
+						<deliveryMethod>mail_order</deliveryMethod>
+						<shippingAddressOid>1000000,CO,80525,FC</shippingAddressOid>
+					</sps.resource.pojo.order.ShipBin>
+				</shipBins>
+				<partnerOid>1</partnerOid>
+				<accountOid>10000050</accountOid>
+				<label>order4</label>
+				<creditCardOid>30000050</creditCardOid>
+				<status>CFM</status>
+				<lockState />
+				<oid>40018050</oid>
+				<shardKey>692114604</shardKey>
+				<recordSeq>2</recordSeq>
+			</resource>
+			<uri>
+				http://ecommerce1.qa.snapfish.com/v1/order/40018050
+			</uri>
+		</sps.common.restlet.RestletRef>
+		<sps.common.restlet.RestletRef>
+			<resource class="sps.resource.pojo.order.Order">
+				<productTotal>0.27</productTotal>
+				<productTax>0.09</productTax>
+				<productDiscount>0.00</productDiscount>
+				<shippingTotal>0.99</shippingTotal>
+				<shippingTax>0.00</shippingTax>
+				<shippingDiscount>0.00</shippingDiscount>
+				<totalRefund>0.00</totalRefund>
+				<createDate>2012-11-14 13:23:07.253 PST</createDate>
+				<updateDate>2012-11-14 13:23:07.253 PST</updateDate>
+				<shipBins>
+					<sps.resource.pojo.order.ShipBin>
+						<productTotal>0.27</productTotal>
+						<productTax>0.09</productTax>
+						<productDiscount>0.00</productDiscount>
+						<shippingTotal>0.99</shippingTotal>
+						<shippingTax>0.00</shippingTax>
+						<shippingDiscount>0.00</shippingDiscount>
+						<totalRefund>0.00</totalRefund>
+						<lineItems>
+							<sps.resource.pojo.order.LineItem>
+								<productTotal>0.27</productTotal>
+								<productTax>0.09</productTax>
+								<productDiscount>0.00</productDiscount>
+								<shippingTotal>0.99</shippingTotal>
+								<shippingTax>0.00</shippingTax>
+								<shippingDiscount>0.00</shippingDiscount>
+								<totalRefund>0.00</totalRefund>
+								<lineItemId>38215050</lineItemId>
+								<skuOid>CommerceProduct_7182</skuOid>
+								<projectOid>proj1</projectOid>
+								<quantity>3</quantity>
+								<vendorOid>district_us</vendorOid>
+								<priceLevel>0</priceLevel>
+								<lineItemOptions />
+								<refunds />
+							</sps.resource.pojo.order.LineItem>
+						</lineItems>
+						<shipBinId>36176050</shipBinId>
+						<deliveryOption>ufc</deliveryOption>
+						<deliveryMethod>mail_order</deliveryMethod>
+						<shippingAddressOid>1000000,CO,80525,FC</shippingAddressOid>
+					</sps.resource.pojo.order.ShipBin>
+				</shipBins>
+				<partnerOid>1</partnerOid>
+				<accountOid>10000050</accountOid>
+				<label>order4</label>
+				<creditCardOid>29115050</creditCardOid>
+				<status>CFM</status>
+				<lockState />
+				<oid>38243050</oid>
+				<shardKey>692114604</shardKey>
+				<recordSeq>2</recordSeq>
+			</resource>
+			<uri>
+				http://ecommerce1.qa.snapfish.com/v1/order/38243050
+			</uri>
+		</sps.common.restlet.RestletRef> -->
+	</resources>
+	<nextRef>
+		http://ecommerce1.qa.snapfish.com/v1/order?queryStart=11
+	</nextRef>
+</sps.common.restlet.CollectionPartQueryResult>

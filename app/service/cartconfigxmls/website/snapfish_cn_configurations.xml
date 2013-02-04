@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+  <shippingparameters>
+    <shippingoption name="mailorder">
+      <shippingaddress>
+        <localaddress parametertype="simple" enabled="yes"/>
+        <internationaladdress parametertype="simple" enabled="yes">
+        	<country code="CN">China</country>
+        	<country code="AF">Afghanistan</country>
+        	<country code="AL">Albania</country>
+        	<country code="DZ">Algeria</country>
+        	<country code="AS">American Samoa</country>
+        	<country code="AD">Andorra</country>
+        	<country code="AO">Angola</country>
+        	<country code="AI">Anguilla</country>
+        	<country code= "AQ">Antarctica</country>
+        	<country code="AG">Antigua and Barbuda</country>
+        	<country code="AR">Argentina>Netherlands</country>
+        	<country code="AM">Armenia</country>
+        	<country code="AW">Aruba</country>
+        	<country code="AU">Australia</country>
+        	<country code="AT">Austria</country>
+        	<country code="AZ">Azerbaijan</country>
+        	<country code="BS">Bahamas</country>
+        	<country code="BH">Bahrain</country>
+        	<country code="BD">Bangladesh</country>
+        	<country code="BB">Barbados</country>
+        	<country code="BY">Belarus</country>
+        	<country code="BE">Belgium</country>
+        	<country code="BZ">Belize</country>
+        	<country code="BJ">Benin</country>
+        	<country code="BM">Bermuda</country>
+        	<country code="BT">Bhutan</country>
+        	<country code="BO">Bolivia</country>
+        	<country code="BA">Bosnia and Herzegovina</country>
+        	<country code="BW">Botswana</country>
+        	<country code="BV">Bouvet Island</country>
+        	<country code="BR">Brazil</country>
+        	<country code="IO">British Indian Ocean Territory</country>
+        	<country code="BN">Brunei Darussalam</country>
+        	<country code="BG">Bulgaria</country>
+        	<country code="BF">Burkina Faso</country>
+        	<country code="BI">Burundi</country>
+        	<country code="KH">Cambodia</country>
+        	<country code="CM">Cameroon</country>
+        	<country code="CA">Canada</country>
+        	<country code="CV">Cape Verde</country>
+        	<country code="KY">Cayman Islands</country>
+        	<country code="CF">Central African Republic</country>
+        	<country code="TD">Chad</country>
+        	<country code="CL">Chile</country>
+        	<country code="CX">Christmas Island</country>
+        	<country code="CC">Cocos (Keeling) Islands</country>
+        	<country code="CO">Colombia</country>
+        	<country code="KM">Comoros</country>
+        	<country code="CG">Congo</country>
+        	<country code="CK">Cook Islands</country>
+        	<country code="CR">Costa Rica</country>
+        	<country code="CI">Cote DIvoire (Ivory Coast)</country>
+        	<country code="HR">Croatia (Hrvatska)</country>
+        	<country code="CY">Cyprus</country>
+        	<country code="CZ">Czech Republic</country>
+        	<country code="CS">Czechoslovakia</country>
+        	<country code="DK">Denmark</country>
+        	<country code="DJ">Djibouti</country>
+        	<country code="DM">Dominica</country>
+        	<country code="DO">Dominican Republic</country>
+        	<country code="TP">East Timor</country>
+        	<country code="EC">Ecuador</country>
+        	<country code="EG">Egypt</country>
+        	<country code="SV">El Salvador</country>
+        	<country code="GQ">Equatorial Guinea</country>
+        	<country code="ER">Eritrea</country>
+        	<country code="EE">Estonia</country>
+        	<country code="ET">Ethiopia</country>
+        	<country code="FK">Falkland Islands</country>
+        	<country code="FO">Faroe Islands</country>
+        	<country code="FJ">Fiji</country>
+            <country code="FI">Finland</country>
+        	<country code="FR">France</country>
+        	<country code="FX">France, Metropolitan</country>
+        	<country code="GF">French Guiana</country>
+        	<country code="PF">French Polynesia</country>
+        	<country code="TF">French Southern Territories</country>
+        	<country code="GA">Gabon</country>
+        	<country code="GM">Gambia</country>
+        	<country code="GE">Georgia</country>
+        	<country code="DE">Germany</country>
+        	<country code="US">United States</country>        	
+        </internationaladdress>
+      </shippingaddress>
+       <localaddressfields>
+        <field name="title" displayed="no"/>
+        <field name="firstname" displayed="yes" ismandatory="yes" displayorder="12" />
+        <field name="lastname"  displayed="no" />
+        <field name="streetmailing" displayorder="6" displayed="yes" ismandatory="yes"/>
+        <field name="streetmailing2" displayorder="7" displayed="yes" ismandatory="no"/>
+        <field name="streetmailing3" displayed="no"/>
+        <field name="citymailing" displayorder="5" displayed="yes" ismandatory="yes"/>
+        <field name="statemailing" displayed="yes" displayorder="4" ismandatory="yes"/>
+        <field name="zipmailing" displayorder="8" displayed="yes" ismandatory="no"/>
+        <field name="mailingcountrycode" displayorder="9" displayed="yes" ismandatory="yes"/>
+        <field name="emailaddress" displayed="no" />
+        <field name="phonenumber1"  displayed="yes" displayorder="10" ismandatory="no" />
+        <field name="phonenumber2"  displayed="yes" displayorder="11" ismandatory="no" />
+      </localaddressfields>
+      <internationaladdressfields>
+        <field name="title" displayed="no"/>
+        <field name="firstname" displayed="yes" displayorder="11" ismandatory="yes" />
+        <field name="lastname"  displayed="no" />
+        <field name="streetmailing" displayorder="4" displayed="yes" ismandatory="yes"/>
+        <field name="streetmailing2" displayorder="5" displayed="yes" ismandatory="no"/>
+        <field name="streetmailing3" displayorder="6" displayed="yes" ismandatory="no"/>
+        <field name="citymailing" displayorder="7" displayed="yes" ismandatory="no"/>
+        <field name="statemailing" displayorder="8" displayed="yes" ismandatory="yes"/>
+        <field name="zipmailing" displayorder="9" displayed="yes" ismandatory="no"/>
+        <field name="mailingcountrycode" displayorder="10" displayed="yes" ismandatory="yes"/>
+        <field name="emailaddress" displayed="no" />
+        <field name="phonenumber1"  displayed="yes" displayorder="12" ismandatory="no"/>
+        <field name="phonenumber2"  displayed="no" />
+      </internationaladdressfields>
+    </shippingoption>
+  </shippingparameters>
+</parameters>

@@ -1,0 +1,103 @@
+<div class="main-colum">
+<h1>Shopping cart </h1> 
+<div class="discription">Please review your order, then click 'check out' to continue. Items will be saved in your cart until you place your order. Need help?</div>
+<!--top buttons start-->
+<div class="buttons dashedline-bottom pushdown-3">
+	<div class="left">
+		<a href="" class="button-02-s"><span>Back to Photos</span></a>
+		<a href="" class="button-02-s"><span>KeepShopping</span></a>
+	</div>
+	<div class="right">
+		<a href="shipping" class="button-01-s"><span>Checkout</span></a>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--top buttons end-->
+<% if(@orders !=nil && @orders.length > 0)%>
+<div id='order_basket'>
+	<div class="ordertotal right">
+		<h5 class="bold">Total Orders : <span><%=@orders.length%></span></h5>
+	</div>
+	<div class="clear"></div>
+		<% @orders.each do |order|%>
+			<% shoppinggCartBean = order[1]%>
+			<div class="product-container">
+			<% shoppinggCartBean.shipBins.each do |shipbin| %>		
+			<div class="product-container-heading bold">Product Name</div>
+			<div class="border">
+			<table cellpadding="0" cellspacing="0" border="0" align="right" width="100%">
+				<tr>
+				<td class="blue-color-bg" width="160"></td>
+				<td>
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td ></td>
+					<td ></td>
+					<td>Qty</td>	
+					<td>Price</td>
+					<td>Shipping</td>
+					<td>tax</td>
+				</tr>
+				<%shipbin[1].lineItems.each do |lineItem|%>
+					<tr>
+						<td valign="middle"><%= image_tag("thumbnail.gif", :alt => "rss feed", :width => "45", :height => "45") %></td> 
+						<td><%=lineItem[1].skuOid%></td> 
+						<td><%=lineItem[1].quantity%></td> 
+						<td><%=lineItem[1].productTotal%></td>
+						<td><%=lineItem[1].shippingTotal%></td>
+						<td><%=lineItem[1].productTax%></td>
+					</tr>
+					<tr>
+						<td ></td>
+						<td colspan="4" class="pushdown1"><%=link_to 'edit'%> | <%=link_to 'remove'%> </td>
+					</tr>
+					<tr><td colspan="6" class="blue-border"></td></tr>
+				<%end%>
+				</table>
+				</td>
+				</tr>
+				</table>
+				<div class="clear"></div>
+				<div class="add-maore-panel bold"><%= link_to 'Add more Products'%></div>
+				<div class="price-container bold">
+					Product total <%=shipbin[1].productTotal%>
+					<!--Shipping total  <%=shipbin[1].shippingTotal%>-->
+					<!--Product tax <%=shipbin[1].productTax%>-->
+				</div>
+				</div>
+				<div class="clear"></div>
+				<% end %>
+			<div class="clear"></div>
+			</div>
+			<div class="ordertotal">
+				<div class="left text-01"><a href="">empty cart</a></div>
+				<div class="right">
+				<h5 class="bold">Order Total :<span> <%= shoppinggCartBean.productTotal %></span></h5>
+				<!--<h5>Shipping Total  :<span> <%= shoppinggCartBean.shippingTotal %></span></h5>-->
+				<!--<h5>Total Tax  :<span> <%= shoppinggCartBean.productTax %></span></h5>-->
+				<span class="text-01">shipping and tax not included <a href="" class="text-02">update total</a></span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="buttons dashedline-top pushtop-3">
+				<div class="left">
+					<a href="" class="button-02-s"><span>Back to Photos</span></a>
+					<a href="" class="button-02-s"><span>keepshopping</span></a>
+				</div>
+				<div class="right">
+					<a href="shipping" class="button-01-s"><span>Checkout</span></a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="trust-panel">
+				<div class="left col-3">
+				<%= image_tag("truest-e-logo.gif", :alt => "rss feed") %><br/><%= image_tag("bbb-online-logo.gif", :alt => "rss feed") %>
+				</div>
+				<div class="left text-01">Snapfish is certified by TRUSTe, an independent entity that monitors the privacy practices of online <br />businesses. We're also a member of the Better Business Bureau's Online Reliability Program.</div>
+				<div class="clear"></div>
+				</div>
+		<%end%>		
+</div>
+</div>
+<%=@secure%>
+<%end%>

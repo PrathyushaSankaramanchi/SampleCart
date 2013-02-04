@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+  <shippingparameters>
+    <shippingoption name="mailorder">
+      <shippingmethods parametertype="complex">
+        <shippingmethod name="UFC" displayorder="1" default="yes"/>
+        <shippingmethod name="ASD" displayorder="2"/>
+        <shippingmethod name="AOE" displayorder="3"/>
+      </shippingmethods>
+      <shippingaddress>
+        <localaddress parametertype="simple" enabled="yes"/>
+        <internationaladdress parametertype="simple" enabled="yes">
+        	<country value="US">United States</country>
+        	<country value="AF">Afghanistan</country>
+        	<country value="AL">Albania</country>
+        	<country value="DZ">Algeria</country>
+        	<country value="AS">American Samoa</country>
+        	<country value="AD">Andorra</country>
+        	<country value="AO">Angola</country>
+        	<country value="AI">Anguilla</country>
+        	<country value= "AQ">Antarctica</country>
+        	<country value="AG">Antigua and Barbuda</country>
+        	<country value="AR">Argentina>Netherlands</country>
+        	<country value="AM">Armenia</country>
+        	<country value="AW">Aruba</country>
+        	<country value="AU">Australia</country>
+        	<country value="AT">Austria</country>
+        	<country value="AZ">Azerbaijan</country>
+        	<country value="BS">Bahamas</country>
+        	<country value="BH">Bahrain</country>
+        	<country value="BD">Bangladesh</country>
+        	<country value="BB">Barbados</country>
+        	<country value="BY">Belarus</country>
+        	<country value="BE">Belgium</country>
+        	<country value="BZ">Belize</country>
+        	<country value="BJ">Benin</country>
+        	<country value="BM">Bermuda</country>
+        	<country value="BT">Bhutan</country>
+        	<country value="BO">Bolivia</country>
+        	<country value="BA">Bosnia and Herzegovina</country>
+        	<country value="BW">Botswana</country>
+        	<country value="BV">Bouvet Island</country>
+        	<country value="BR">Brazil</country>
+        	<country value="IO">British Indian Ocean Territory</country>
+        	<country value="BN">Brunei Darussalam</country>
+        	<country value="BG">Bulgaria</country>
+        	<country value="BF">Burkina Faso</country>
+        	<country value="BI">Burundi</country>
+        	<country value="KH">Cambodia</country>
+        	<country value="CM">Cameroon</country>
+        	<country value="CA">Canada</country>
+        	<country value="CV">Cape Verde</country>
+        	<country value="KY">Cayman Islands</country>
+        	<country value="CF">Central African Republic</country>
+        	<country value="TD">Chad</country>
+        	<country value="CL">Chile</country>
+        	<country value="CN">China</country>
+        	<country value="CX">Christmas Island</country>
+        	<country value="CC">Cocos (Keeling) Islands</country>
+        	<country value="CO">Colombia</country>
+        	<country value="KM">Comoros</country>
+        	<country value="CG">Congo</country>
+        	<country value="CK">Cook Islands</country>
+        	<country value="CR">Costa Rica</country>
+        	<country value="CI">Cote DIvoire (Ivory Coast)</country>
+        	<country value="HR">Croatia (Hrvatska)</country>
+        	<country value="CY">Cyprus</country>
+        	<country value="CZ">Czech Republic</country>
+        	<country value="CS">Czechoslovakia</country>
+        	<country value="DK">Denmark</country>
+        	<country value="DJ">Djibouti</country>
+        	<country value="DM">Dominica</country>
+        	<country value="DO">Dominican Republic</country>
+        	<country value="TP">East Timor</country>
+        	<country value="EC">Ecuador</country>
+        	<country value="EG">Egypt</country>
+        	<country value="SV">El Salvador</country>
+        	<country value="GQ">Equatorial Guinea</country>
+        	<country value="ER">Eritrea</country>
+        	<country value="EE">Estonia</country>
+        	<country value="ET">Ethiopia</country>
+        	<country value="FK">Falkland Islands</country>
+        	<country value="FO">Faroe Islands</country>
+        	<country value="FJ">Fiji</country>
+            <country value="FI">Finland</country>
+        	<country value="FR">France</country>
+        	<country value="FX">France, Metropolitan</country>
+        	<country value="GF">French Guiana</country>
+        	<country value="PF">French Polynesia</country>
+        	<country value="TF">French Southern Territories</country>
+        	<country value="GA">Gabon</country>
+        	<country value="GM">Gambia</country>
+        	<country value="GE">Georgia</country>
+        	<country value="DE">Germany</country>   
+        	<country value="GI">Gibraltar</country>
+        	<country value="GB">Great Britain (UK)</country>
+        	<country value="GR">Greece</country>
+        	<country value="GL">Greenland</country>
+        	<country value="GD">Grenada</country>
+        	<country value="GP">Guadeloupe</country>
+        	<country value="GU">Guam</country>
+        	<country value="GT">Guatemala</country>
+        	<country value="GN">Guinea</country>
+        	<country value="GW">Guinea-Bissau</country>
+        	<country value="HT">Haiti</country>        	
+			<country value="HM">Heard and McDonald Islands</country>
+			<country value="HN">Honduras</country>
+			<country value="HK">Hong Kong</country>
+			<country value="HU">Hungary</country>
+			<country value="IS">Iceland</country>
+			<country value="IN">India</country>
+			<country value="ID">Indonesia</country>
+			<country value="IE">Ireland</country>
+			<country value="IL">Israel</country>
+			<country value="IT">Italy</country>
+			<country value="JM">Jamaica</country>
+			<country value="JP">Japan</country>
+			<country value="JO">Jordan</country>
+			<country value="KZ">Kazakhstan</country>
+			<country value="KE">Kenya</country>
+			<country value="KI">Kiribati</country>
+			<country value="KR">Korea (South)</country>
+			<country value="KW">Kuwait</country>
+			<country value="KG">Kyrgyzstan</country>
+			<country value="LA">Laos</country>
+			<country value="LV">Latvia</country>
+			<country value="LB">Lebanon</country>
+			<country value="LS">Lesotho</country>
+			<country value="LY">Libya</country>
+			<country value="LI">Liechtenstein</country>
+			<country value="LT">Lithuania</country>
+			<country value="LU">Luxembourg</country>
+			<country value="MO">Macau</country>
+			<country value="MK">Macedonia</country>
+			<country value="MG">Madagascar</country>
+			<country value="MW">Malawi</country>
+			<country value="MY">Malaysia</country>
+			<country value="MV">Maldives</country>
+			<country value="ML">Mali</country>
+			<country value="MT">Malta</country>
+			<country value="MH">Marshall Islands</country>
+			<country value="MQ">Martinique</country>
+			<country value="MR">Mauritania</country>
+			<country value="MU">Mauritius</country>
+			<country value="YT">Mayotte</country>
+			<country value="MX">Mexico</country>
+			<country value="FM">Micronesia</country>
+			<country value="MD">Moldova</country>
+			<country value="MC">Monaco</country>
+			<country value="MN">Mongolia</country>
+			<country value="MS">Montserrat</country>
+			<country value="MA">Morocco</country>
+			<country value="MZ">Mozambique</country>
+			<country value="NA">Namibia</country>
+			<country value="NR">Nauru</country>
+			<country value="NP">Nepal</country>
+			<country value="NL">Netherlands</country>
+			<country value="AN">Netherlands Antilles</country>
+			<country value="NT">Neutral Zone</country>
+			<country value="NC">New Caledonia</country>
+			<country value="NZ">New Zealand (Aotearoa)</country>
+			<country value="NI">Nicaragua</country>
+			<country value="NE">Niger</country>
+			<country value="NU">Niue</country>
+			<country value="NF">Norfolk Island</country>
+			<country value="MP">Northern Mariana Islands</country>
+			<country value="NO">Norway</country>
+			<country value="OM">Oman</country>
+			<country value="PK">Pakistan</country>
+			<country value="PW">Palau</country>
+			<country value="PA">Panama</country>
+			<country value="PG">Papua New Guinea</country>
+			<country value="PY">Paraguay</country>
+			<country value="PE">Peru</country>
+			<country value="PH">Philippines</country>
+			<country value="PN">Pitcairn</country>
+			<country value="PL">Poland</country>
+			<country value="PT">Portugal</country>
+			<country value="PR">Puerto Rico</country>
+			<country value="QA">Qatar</country>
+			<country value="RE">Reunion</country>
+			<country value="RO">Romania</country>
+			<country value="RU">Russian Federation</country>
+			<country value="RW">Rwanda</country>
+			<country value="GS">S. Georgia and S. Sandwich Isls.</country>
+			<country value="KN">Saint Kitts and Nevis</country>
+			<country value="LC">Saint Lucia</country>
+			<country value="VC">Saint Vincent and the Grenadines</country>
+			<country value="WS">Samoa</country>
+			<country value="SM">San Marino</country>
+			<country value="ST">Sao Tome and Principe</country>
+			<country value="SA">Saudi Arabia</country>
+			<country value="SN">Senegal</country>
+			<country value="SC">Seychelles</country>
+			<country value="SL">Sierra Leone</country>
+			<country value="SG">Singapore</country>
+			<country value="SK">Slovak Republic</country>
+			<country value="SI">Slovenia</country>
+			<country value="SB">Solomon Islands</country>
+			<country value="SO">Somalia</country>
+			<country value="ZA">South Africa</country>
+			<country value="ES">Spain</country>
+			<country value="LK">Sri Lanka</country>
+			<country value="SH">St. Helena</country>
+			<country value="PM">St. Pierre and Miquelon</country>
+			<country value="SR">Suriname</country>
+			<country value="SJ">Svalbard and Jan Mayen Islands</country>
+			<country value="SZ">Swaziland</country>
+			<country value="SE">Sweden</country>
+			<country value="CH">Switzerland</country>
+			<country value="TW">Taiwan</country>
+			<country value="TJ">Tajikistan</country>
+			<country value="TZ">Tanzania</country>
+			<country value="TH">Thailand</country>
+			<country value="TK">Tokelau</country>
+			<country value="TO">Tonga</country>
+			<country value="TT">Trinidad and Tobago</country>
+			<country value="TN">Tunisia</country>
+			<country value="TR">Turkey</country>
+			<country value="TM">Turkmenistan</country>
+			<country value="TC">Turks and Caicos Islands</country>
+			<country value="TV">Tuvalu</country>
+			<country value="UM">US Minor Outlying Islands</country>
+			<country value="SU">USSR (former)</country>
+			<country value="UG">Uganda</country>
+			<country value="UA">Ukraine</country>
+			<country value="AE">United Arab Emirates</country>
+			<country value="UK">United Kingdom</country>
+			<country value="UY">Uruguay</country>
+			<country value="UZ">Uzbekistan</country>
+			<country value="VU">Vanuatu</country>
+			<country value="VA">Vatican City State (Holy See)</country>
+			<country value="VE">Venezuela</country>
+			<country value="VN">Viet Nam</country>
+			<country value="VG">Virgin Islands (British)</country>
+			<country value="VI">Virgin Islands (U.S.)</country>
+			<country value="WF">Wallis and Futuna Islands</country>
+			<country value="EH">Western Sahara</country>
+			<country value="YE">Yemen</country>
+			<country value="YU">Yugoslavia</country>
+			<country value="ZR">Zaire</country>
+			<country value="ZM">Zambia</country>
+        </internationaladdress>        
+      </shippingaddress>
+      
+      <localaddressfields>
+        <field name="title" displayed="no" ismandatory="no"/>
+        <field name="firstname" displayed="no" ismandatory="no"/>
+        <field name="lastname"  displayed="no" ismandatory="no"/>
+        <field name="streetmailing" displayorder="4" displayed="yes" ismandatory="yes"/>
+        <field name="streetmailing2" displayorder="5" displayed="yes" ismandatory="no"/>
+        <field name="streetmailing3" displayed="yes" ismandatory="no"/>
+        <field name="citymailing" displayorder="6" displayed="yes" ismandatory="yes"/>
+        <field name="statemailing" displayorder="7" displayed="yes" ismandatory="yes"/>
+        <field name="zipmailing" displayorder="8" displayed="yes" ismandatory="yes"/>
+        <field name="mailingcountrycode" displayorder="9" displayed="yes" ismandatory="yes"/>
+        <field name="emailaddress" displayed="no" ismandatory="no"/>
+        <field name="phonenumber1"  displayed="no" ismandatory="no"/>
+        <field name="phonenumber2"  displayed="no" ismandatory="no"/>
+      </localaddressfields>
+      <internationaladdressfields>
+        <field name="title" displayed="no"/>
+        <field name="firstname" displayorder="2" displayed="yes" ismandatory="yes" />
+        <field name="lastname" displayorder="3" displayed="yes" ismandatory="yes" />
+        <field name="streetmailing" displayorder="4" displayed="yes" ismandatory="yes"/>
+        <field name="streetmailing2" displayorder="5" displayed="yes" ismandatory="no"/>
+        <field name="streetmailing3" displayorder="6" displayed="yes" ismandatory="no"/>
+        <field name="citymailing" displayorder="7" displayed="yes" ismandatory="yes"/>
+        <field name="statemailing" displayorder="8" displayed="yes" ismandatory="yes"/>
+        <field name="zipmailing" displayorder="9" displayed="yes" ismandatory="yes"/>
+        <field name="mailingcountrycode" displayorder="10" displayed="yes" ismandatory="yes"/>
+        <field name="emailaddress" displayed="no" />
+        <field name="phonenumber1"  displayed="no" />
+        <field name="phonenumber2"  displayed="no" />
+      </internationaladdressfields>
+      <statefieldvalues>
+      	<state value="">Select One</state>
+	    <state value="">-----------------</state>
+	    <state value="AL">Alabama</state>
+		<state value="AK">Alaska</state>
+		<state value="AZ">Arizona</state>
+		<state value="AR">Arkansas</state>
+		<state value="CA">California</state>
+		<state value="CO">Colorado</state>
+		<state value="CT">Connecticut</state>
+		<state value="DE">Delaware</state>
+		<state value="DC">District of Columbia</state>
+		<state value="FL">Florida</state>
+		<state value="FM">Federated States of Micronesia</state>
+		<state value="GA">Georgia</state>
+		<state value="HI">Hawaii</state>
+		<state value="ID">Idaho</state>
+		<state value="IL">Illinois</state>
+		<state value="IN">Indiana</state>
+		<state value="IA">Iowa</state>
+		<state value="KS">Kansas</state>
+		<state value="KY">Kentucky</state>
+		<state value="LA">Louisiana</state>
+		<state value="ME">Maine</state>
+		<state value="MD">Maryland</state>
+		<state value="MA">Massachusetts</state>
+		<state value="MI">Michigan</state>
+		<state value="MN">Minnesota</state>
+		<state value="MS">Mississippi</state>
+		<state value="MO">Missouri</state>
+		<state value="MT">Montana</state>
+		<state value="MH">Marshall Islands</state>
+		<state value="NE">Nebraska</state>
+		<state value="NV">Nevada</state>
+		<state value="NH">New Hampshire</state>
+		<state value="NJ">New Jersey</state>
+		<state value="NM">New Mexico</state>
+		<state value="NY">New York</state>
+		<state value="NC">North Carolina</state>
+		<state value="ND">North Dakota</state>
+		<state value="OH">Ohio</state>
+		<state value="OK">Oklahoma</state>
+		<state value="OR">Oregon</state>
+		<state value="PA">Pennsylvania</state>
+		<state value="PW">Palau</state>
+		<state value="RI">Rhode Island</state>
+		<state value="SC">South Carolina</state>
+		<state value="SD">South Dakota</state>
+		<state value="TN">Tennessee</state>
+		<state value="TX">Texas</state>
+		<state value="UT">Utah</state>
+		<state value="VT">Vermont</state>
+		<state value="VA">Virginia</state>
+		<state value="WA">Washington</state>
+		<state value="WV">West Virginia</state>
+		<state value="WI">Wisconsin</state>
+		<state value="WY">Wyoming</state>
+		<state value="">-----------------</state>
+		<state value="AS">American Samoa</state>
+		<state value="GU">Guam</state>
+		<state value="MP">Northern Mariana Islands</state>
+		<state value="PR">Puerto Rico</state>
+		<state value="VI">Virgin Islands</state>
+		<state value="">-----------------</state>
+		<state value="AA">Armed Forces Americas</state>
+		<state value="AE">Armed Forces Europe</state>
+		<state value="AP">Armed Forces Pacific</state>
+      </statefieldvalues>
+    </shippingoption>
+  </shippingparameters>
+</parameters>

@@ -1,0 +1,22 @@
+	<div id ="header" class="cart-header">
+		<div class="header">
+			<div class="header-container">
+				<div>
+					<div class="left">
+						<%=link_to "",'',:class => "logo"%>
+					</div>
+					<div class="right header-links">
+					<%if session[:currentUser] != nil%>
+						<%=link_to 'logout', '/logout'%> |
+						<%=link_to 'Back to cart', '/shoppingcart'%>						
+					<%else%>
+						<%=link_to 'welcome', '/welcome'%>
+						| <%=link_to 'log in', '/login'%>
+						| <%=link_to 'signup', '/signin'%>
+					<%end%>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+	  	</div>
+	</div>

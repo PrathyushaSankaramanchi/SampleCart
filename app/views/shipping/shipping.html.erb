@@ -1,0 +1,200 @@
+<%= javascript_include_tag "backbone/views/shipping/shippingaddress" %>
+
+<h3 align="left"><b><%= t('.Shipping')%></b></h3>
+
+<div class="forms">
+	<script type="text/javascript">
+	function showAddress(){
+  		var checkedVal_sameAddress = document.getElementById('address_my')
+  		var checkedVal_dfrntAddress = document.getElementById('address_different') 
+  		
+	     	if(checkedVal_sameAddress.checked && !checkedVal_dfrntAddress.checked){
+	       		shipping_same_address.style['display'] = 'block';
+	       		shipping_different_address.style['display'] = 'none';
+	     	} else if(!checkedVal_sameAddress.checked && checkedVal_dfrntAddress.checked){
+	     		shipping_same_address.style['display'] = 'none';
+	       		shipping_different_address.style['display'] = 'block';	       	
+	     	}	
+	  };
+	</script>
+	
+	<script type="text/template" id="shipping-address"> 	
+		
+		<%= radio_button_tag(:address, "my", true, :onclick => "javascript:showAddress()")  %> 
+		<%= label_tag(:my_addresslbl, "Ship to my address") %> <br/>
+		<div id="shipping_same_address" name="shipping_same_address" style="display:block">			
+			<%if @shippingInfo.address['title'].titleDisplayed == "yes"%>
+				<%=label_tag 'titlelbl', 'Title' %><br/>
+				<%=text_field 'title', '', :size => 25%><br/>		
+			<%end%>
+			<%if @shippingInfo.address['firstname'].firstnameDisplayed == "yes"%>
+				<%=label_tag 'firstnamelbl', 'FirstName' %><br/>
+				<%=text_field_tag 'firstnametxt', '', :size => 25%><br/>	
+			<%end%>
+			<%if @shippingInfo.address['lastname'].lastnameDisplayed == "yes"%>	
+				<%=label_tag 'lastnamelbl', 'LastName' %><br/>
+				<%=text_field_tag 'lastnametxt', '', :size => 25%><br/>	
+			<%end%>	
+			<%if @shippingInfo.address['streetmailing'].streetmailingDisplayed == "yes"%>		
+				<%=label_tag 'streetmailinglbl' , 'street' %><br/>
+				<%=text_field_tag 'streetmailingtxt', '', :size => 25%><br/>
+				<%=text_field_tag 'streetmailing2txt', '', :size => 25%><br/>
+				<%=text_field_tag 'streetmailing3txt', '', :size => 25%><br/>
+			<%end%>
+			<%if @shippingInfo.address['citymailing'].citymailingDisplayed == "yes"%>		
+				<%=label_tag 'citymailinglbl' , 'city' %><br/>
+				<%=text_field_tag 'citymailingtxt', '', :size => 25%><br/>
+			<%end%>
+			<%if @shippingInfo.address['statemailing'].statemailingDisplayed == "yes"%>		
+				<%=label_tag 'statemailinglbl' , 'state/province/region' %><br/> 
+				<%if @shippingInfo.selectedCountry == "US"%>
+					<%= select("statemailingname", "statemailingid", @shippingInfo.state.collect {|p| [ p ]}) %><br/>
+				<%else%>
+					<%=text_field_tag 'mailingstatetxt', 'Houston', :size => 25%><br/>
+				<%end%>
+			<%end%>
+			<%if @shippingInfo.address['zipmailing'].zipmailingDisplayed == "yes" && @shippingInfo.address['mailingcountrycode'].mailingcountrycodeDisplayed == "yes"%>		
+				<%=label_tag 'zipmailinglbl' , 'ZIP/postal code' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<%=label_tag 'mailingcountrylbl' , 'country' %><br/>
+				<%=text_field_tag 'zipmailingtxt', '', :class =>  'input-s'%>
+				<%if @shippingInfo.intlShippingEnabled == "yes"%>
+					<%= select("mailingcountryname", "mailingcountryid", @shippingInfo.country.collect {|p| [ p ]}) %><br/> 
+				<%else%>
+					<%=text_field_tag 'mailingcountrytxt', 'United States', :size => 25%><br/>
+				<%end%>
+			<%end%>			
+			<%if @shippingInfo.address['emailaddress'].emailaddressDisplayed == "yes"%>		
+				<%=label_tag 'emailaddresslbl' , 'email' %><br/> 
+				<%=text_field_tag 'emailaddresstxt', '', :size => 25%><br/>
+			<%end%>
+			<%if @shippingInfo.address['phonenumber1'].phonenumber1Displayed == "yes" || @shippingInfo.address['phonenumber2'].phonenumber2Displayed == "yes"%>		
+				<%=label_tag 'phonenumber1lbl' , 'phonenumber' %><br/>
+				<%=text_field_tag 'phonenumber1txt', '', :size => 25%><br/>
+				<%=text_field_tag 'phonenumber2txt', '', :size => 25%><br/>
+			<%end%>
+		</div>
+  	
+  		<%= radio_button_tag(:address, "different", false, :onclick => "javascript:showAddress()") %>
+		<%= label_tag(:different_addresslbl, "Ship to a different address") %> <br/>
+		
+  		<div id="shipping_different_address" name="shipping_different_address" style="display:none">			
+	  		<%if @shippingInfo.address['title'].titleDisplayed == "yes"%>
+				<%=label_tag 'titlelbl', 'Title' %><br/>
+				<%=text_field_tag 'title', '', :size => 25%><br/>		
+			<%end%>
+			<%if @shippingInfo.address['firstname'].firstnameDisplayed == "no" || @shippingInfo.address['lastname'].lastnameDisplayed == "no"%>
+				<%=label_tag 'firstnamelbl', 'firstName',:class =>  'input-s' %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<%=label_tag 'lastnamelbl', 'lastName',:class =>  'input-s' %><br/>
+				<%=text_field_tag 'firstnametxt', '', :class =>  'input-s'%>				
+				<%=text_field_tag 'lastnametxt', '', :class =>  'input-s'%><br/>	
+			<%end%>	
+			<%if @shippingInfo.address['streetmailing'].streetmailingDisplayed == "yes"%>		
+				<%=label_tag 'streetmailinglbl' , 'street' %><br/>
+				<%=text_field_tag 'streetmailingtxt', '', :size => 25%><br/>
+				<%=text_field_tag 'streetmailing2txt', '', :size => 25%><br/>
+				<%=text_field_tag 'streetmailing3txt', '', :size => 25%><br/>
+			<%end%>
+			<%if @shippingInfo.address['citymailing'].citymailingDisplayed == "yes"%>		
+				<%=label_tag 'citymailinglbl' , 'city' %><br/>
+				<%=text_field_tag 'citymailingtxt', '', :size => 25%><br/>
+			<%end%>
+			<%if @shippingInfo.address['statemailing'].statemailingDisplayed == "yes"%>		
+				<%=label_tag 'statemailinglbl' , 'state/province/region' %><br/> 
+				<%= select("statemailingname", "statemailingid", @shippingInfo.state.collect {|p| [ p ]}) %><br/> 
+			<%end%>
+			<%if @shippingInfo.address['zipmailing'].zipmailingDisplayed == "yes" && @shippingInfo.address['mailingcountrycode'].mailingcountrycodeDisplayed == "yes"%>		
+				<%=label_tag 'zipmailinglbl' , 'ZIP/postal code' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<%=label_tag 'mailingcountrylbl' , 'country' %><br/>
+				<%=text_field_tag 'zipmailingtxt', '', :class =>  'input-s'%>
+				<%if @shippingInfo.intlShippingEnabled == "yes"%>
+					<%= select("mailingcountryname", "mailingcountryid", @shippingInfo.country.collect {|p| [ p ]}) %><br/> 
+				<%else%>
+					<%=text_field_tag 'mailingcountrytxt', 'United States', :size => 25%><br/>
+				<%end%>
+			<%end%>					
+			<%if @shippingInfo.address['emailaddress'].emailaddressDisplayed == "yes"%>		
+				<%=label_tag 'emailaddresslbl' , 'email' %><br/> 
+				<%=text_field_tag 'emailaddresstxt', '', :size => 25%><br/>
+			<%end%>
+			<%if @shippingInfo.address['phonenumber1'].phonenumber1Displayed == "yes" || @shippingInfo.address['phonenumber2'].phonenumber2Displayed == "yes"%>		
+				<%=label_tag 'phonenumber1lbl' , 'phonenumber' %><br/>
+				<%=text_field_tag 'phonenumber1txt', '', :size => 25%><br/>
+				<%=text_field_tag 'phonenumber2txt', '', :size => 25%><br/>
+			<%end%>
+		</div>
+		<br/></br/>
+		<% if(@orders !=nil && @orders.length > 0)%>
+		<h3><b>Order summary</b></h3>
+		<br/>
+		<table cellpadding="0" cellspacing="0" border="0" width="40%">
+			<% @orders.each do |order|%>
+				<% shoppinggCartBean = order[1]%>
+				<div class="product-container">
+				
+					<% shoppinggCartBean.shipBins.each do |shipbin| %>	
+				
+						<%shipbin[1].lineItems.each do |lineItem|%>
+								
+							<tr>
+								<td width="30"><%= lineItem[1].quantity%></td>						 
+								<td><%= lineItem[1].skuOid%></td> 
+								<td width="80">$<%= lineItem[1].productTotal%></td>						
+							</tr>
+							<% @prodTotal = shipbin[1].productTotal%>					
+						<%end%>	
+						
+						<div class="clear"></div>			
+			<%end%>
+		</table>
+			<% @prodTax = shoppinggCartBean.shippingTax%>
+			<% @orderTotal= shoppinggCartBean.productTotal %>
+		<br/></br/>
+		<%end%>
+		<%end%>
+		<table cellpadding="0" cellspacing="0" border="0" width="40%">
+			<tr>
+				<td width="30">&nbsp;</td>
+				<td>Subtotal: </td>
+				<td width="80">$<%=@prodTotal%></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Standard S&H:</td>
+				<td>$3.93</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><h5 class="bold">Order Total: </h5></td>
+				<td><h5 class="bold">$5.10</h5></td>
+			</tr>
+		</table>
+		<br/>
+		<div class="clear"></div>
+		<div class="buttons" style="width:35%">			
+					<div class="right">					
+						<a href="shoppingcart" class="button-02-s" id="cancelButton"><span>Cancel</span></a> &nbsp;&nbsp;
+						<input type="button" value="continue" id="continueButton" />
+						<!--<a href="" class="button-01-s pushleft-2" id="continueButton"><span>Continue</span></a>&nbsp;&nbsp;-->					
+					</div>
+		<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		<%=@secure%>
+  	</script>
+  	
+	<%= form_tag :controller=>'shipping', :action => 'shipping', :method => :post  do %>
+		<br/>
+		<%= select("shippingcodename", "shippingcodeid", @shippingInfo.shippingCode.collect {|p| [ p ]}) %><br/>
+		</br/>	
+		<div id="shipping_container"></div>
+	<% end %>
+
+	</div>
+	
+	<script type="text/javascript">	
+		    
+		var addressFields = <%=@shippingInfo.address.to_json.html_safe %>
+		var shipping_view = new ShippingView({el:$("#shipping_container")});
+
+	</script>
+	

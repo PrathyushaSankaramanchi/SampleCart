@@ -1,0 +1,26 @@
+<h1>Login</h1>
+<br /><br /><br />
+<div>
+	<%= form_tag :controller=>'login', :action => 'submit', :method => :post  do %>
+		<div> Login form </div>
+		<div style="color:red">
+			<%=flash[:userNotExist]%>
+		</div>
+		
+		<div style="color:red">
+			<%=flash[:email]%>
+		</div>
+		<div>
+			<div><%=label_tag 'login', 'Email' %> : <%=text_field 'login', 'email', 'size' => 15%></div>
+		</div>
+		<div style="color:red">
+			<%=flash[:password]%>
+		</div>
+		<div>
+			<div><%=label_tag 'login', 'Password' %> : <%=password_field 'login', 'password', 'size' =>15%></div>
+		</div>
+		<div>
+			<div><%=submit_tag 'login' %></div>
+		</div>
+	<%end%>
+</div>
